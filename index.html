@@ -1,58 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="ourStyle.css">
     <meta charset="UTF-8">
     <title>Yamit Segev's Resume</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-size: 3rem; /* Increase the base font size */
+        }
+        h1, h2, h3, .h1, .h2, .h3 {
+            font-weight: 500; /* Bootstrap's default font-weight for headings is 500 */
+        }
+        h1, .h1 {
+            font-size: 5rem; /* Larger size for h1 */
+        }
+        h2, .h2 {
+            font-size: 2rem; /* Larger size for h2 */
+        }
+        h3, .h3 {
+            font-size: 2rem; /* Larger size for h3 */
+        }
+        .card-title {
+            font-size: 2.5rem; /* Larger size for card titles */
+        }
+        .card-text {
+            font-size: 2.1rem; /* Larger size for card text */
+        }
+        .list-group-item {
+            font-size: 2.1rem; /* Larger size for list items */
+        }
+        .btn {
+            font-size: 2.1rem; /* Larger size for buttons */
+            padding: 1.5rem 2rem; /* Larger padding for buttons */
+        }
+    </style>
 </head>
-<body>
-    <h1>Yamit Segev Resume</h1>
-
-    <img src="./images/yamit_photo.jpg" alt="Yamit Segev" class="rounded mx-auto d-block" style="float: left; margin-right: 100px; margin-left: 50px; margin-bottom: 100px"/>
-
-    <h3>I am Yamit, a 25-year-old individual, raised in Bat Yam. Currently, I work as a banker at 'Massad' bank and a third-year computer science student.</h3>
-
-    <h2>Programming Languages and Tools:</h2>
-
-    <ul class="list-group" style="margin-left: 200px; font-size: medium">
-        <li class="list-group-item">C language</li>
-        <li class="list-group-item">C++ language</li>
-        <li class="list-group-item">C# language</li>
-        <li class="list-group-item">HTML</li>
-        <li class="list-group-item">CSS</li>
-        <li class="list-group-item">Linux</li>
-        <li class="list-group-item">MongoDB</li>
-        <li class="list-group-item">SQL</li>
-        <li class="list-group-item">Selenium</li>
-        <li class="list-group-item">Jenkins</li>
-    </ul>
-
-    <!-- Project Cards -->
-    <div class="card" style="width: 18rem; margin-left: 500px; margin-top: 20px">
-        <img src="./images/image_2.jpg" alt="Painter Project" class="card-img-top">
-        <div class="card-body">
-            <h4 class="card-title">Painter</h4>
-            <p class="card-text">Painter project written in C# demonstrating skills of Object Oriented programming.</p>
-            <a href="https://github.com/knir44/painter-C-.git" class="btn btn-primary">Project View</a>
+<body class="bg-light">
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Yamit Segev Resume</h1>
+        <div class="text-center">
+            <img src="./images/yamit_photo.jpg" alt="Yamit Segev" class="rounded-circle mb-3" style="width: 150px;">
+        </div>
+        <div class="introduction text-center mb-4">
+            <h3>I am Yamit, a 25-year-old individual, raised in Bat Yam. Currently, I work as a banker at 'Massad' bank and a third-year computer science student.</h3>
+        </div>
+        <div class="skills-container text-center mb-5">
+            <h2>Programming Languages and Tools:</h2>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">C language</li>
+                <li class="list-group-item">C++ language</li>
+                <li class="list-group-item">C# language</li>
+                <li class="list-group-item">HTML</li>
+                <li class="list-group-item">CSS</li>
+                <li class="list-group-item">Linux</li>
+                <li class="list-group-item">MongoDB</li>
+                <li class="list-group-item">SQL</li>
+                <li class="list-group-item">Selenium</li>
+                <li class="list-group-item">Jenkins</li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <div class="card h-100 d-flex flex-column">
+                    <img src="./images/image_2.jpg" alt="Painter Project" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">Painter</h4>
+                        <p class="card-text">Painter project written in C# demonstrating skills of Object Oriented programming.</p>
+                        <a href="https://github.com/knir44/painter-C-.git" class="btn btn-primary mt-auto d-block">Project View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card h-100 d-flex flex-column">
+                    <img src="./images/image_1.jpg" alt="CaNadlan Project" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">CaNadlan</h4>
+                        <p class="card-text">Machine learning project designed to predict apartment prices based on specific characteristics and details.</p>
+                        <a href="https://github.com/knir44/CaNadlan.git" class="btn btn-primary mt-auto d-block">Project View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card h-100 d-flex flex-column">
+                    <img src="./images/image_3.jpg" alt="Machine Learning Project" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Machine Learning</h4>
+                        <p class="card-text">This project involved experiments and data collection. I carried out representative actions to collect and analyze relevant data.</p>
+                        <a href="https://github.com/yamitsegev/MachineLearning.git" class="btn btn-primary mt-auto d-block">Project View</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
-    <div class="card" style="width: 18rem; margin-left: 830px; margin-top: -326px">
-        <img src="./images/image_1.jpg" alt="CaNadlan Project" class="card-img-top">
-        <div class="card-body">
-            <h4 class="card-title">CaNadlan</h4>
-            <p class="card-text">Machine learning project designed to predict apartment prices based on specific characteristics and details.</p>
-            <a href="https://github.com/knir44/CaNadlan.git" class="btn btn-primary">Project View</a>
-        </div>
-    </div>
-
-    <div class="card" style="width: 18rem; margin-left: 1190px; margin-top: -325px">
-        <img src="./images/image_3.jpg" alt="Machine Learning Project" class="card-img-top">
-        <div class="card-body">
-            <h4 class="card-title">Machine Learning</h4>
-            <p class="card-text">This project involved experiments and data collection. I carried out representative actions to collect and analyze relevant data.</p>
-            <a href="https://github.com/yamitsegev/MachineLearning.git" class="btn btn-primary">Project View</a>
-        </div>
-    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
